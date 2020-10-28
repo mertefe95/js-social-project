@@ -1,24 +1,42 @@
 {
-  "name": "next-js-tailwin",
-  "version": "0.1.0",
-  "private": true,
+  "name": "fanbird-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next -p 3101",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvpkit/mvp-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvpkit/mvp-app/issues"
+  },
+  "homepage": "https://github.com/mvpkit/mvp-app#readme",
   "dependencies": {
-    "next": "10.0.0",
-    "postcss-import": "^13.0.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.8",
+    "@types/react-dom": "^16.9.8",
+    "next": "^9.5.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-instagram-login": "^1.4.0"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0",
-    "@types/node": "^14.14.6",
-    "@types/react": "^16.9.55",
-    "autoprefixer": "^10.0.1",
-    "tailwindcss": "^1.9.6",
-    "typescript": "^4.0.5"
+    "@types/react": "^16.9.51",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.8.10",
+    "typescript": "^4.0.3"
   }
 }
