@@ -1,0 +1,338 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face{
+    font-family: "NHaasGroteskTXPro-Medium";
+    src: url("../public/NHaasGroteskTXPro-55Rg.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "NHaasGroteskTXPro-Bold";
+    src: url("../public/NHaasGroteskTXPro-75Bd.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "SitkaSmall-Bold";
+    src: url("../public/sitka-small-599.ttf") format("truetype");
+}
+
+
+.bird-first-h {
+    font-family: 'SitkaSmall-Bold';
+}
+
+.bird-content > a {
+    font-family: 'NHaasGroteskTXPro-Bold';
+}
+
+.membership-text > h2 {
+    font-family: 'NHaasGroteskTXPro-Bold';
+}
+
+.membership-first-h2 {
+    font-family: 'SitkaSmall-Bold' !important;
+}
+
+.header {
+    font-family: 'NHaasGroteskTXPro-Bold';
+}
+
+
+
+.membership-text > p {
+    font-family: 'NHaasGroteskTXPro-Medium';
+}
+
+.explanation-h {
+    font-family: 'SitkaSmall-Bold';
+}
+
+.card > h2 {
+    font-family: 'NHaasGroteskTXPro-Bold';
+    border-width: 0 0 0 5px;
+    border-color: rgb(231, 163, 102);
+    border-style: solid;
+}
+
+.card > p {
+    font-family: 'NHaasGroteskTXPro-Medium';
+    color: rgb(13, 59, 76);
+}
+
+
+.learn-more-div {
+    font-family: 'Arial';
+}
+
+.learn-more-div > p {
+    color: rgb(160, 174, 192);
+}
+
+.jae-lee-first-p {
+    font-family: 'SitkaSmall-Bold';
+    color: rgb(13, 59, 76);
+    font-size: 18px;
+}
+
+.jae-lee-second-p {
+    font-family: 'Arial';
+}
+
+.james-lee-div {
+    background-color: #E2F6FF;
+}
+
+.james-lee-h {
+    font-family: 'NHaasGroteskTXPro-Bold';
+    font-size: 22px;
+    color: rgb(13, 59, 76);
+}
+
+.james-lee-first-p {
+    font-family: 'NHaasGroteskTXPro-Medium';
+    font-size: 15px;
+    color: rgb(13, 59, 76);
+}
+
+.james-lee-second-p {
+    font-family: 'Arial';
+}
+
+.header {
+    font-family: 'NHaasGroteskTXPro-Bold';
+}
+
+/*
+@media screen and (min-width: 570px) {
+    .logo-div {
+        height: 50%;
+        width: 50%;
+    }
+}
+*/
+
+.logo-div {
+    height: 100px;
+    width: 180px;
+}
+
+
+@media screen and (min-width: 570px) {
+    .header {
+        justify-content: space-evenly;
+    }
+    .menu-links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu-links li {
+        padding: 0 12px;
+    }
+
+}
+
+@media screen and (min-width: 1050px) {
+    .bird-first-h {
+        font-size: 75px;
+        letter-spacing: -1.7px;
+        line-height: 78px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .upper-content {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .bird-content {
+        position: absolute;
+        top: 20%;
+        right: -40%;
+        text-align: left;
+    }
+
+    .bird-first-p {
+        font-size: 25px;
+    }
+
+    .upper-content {
+        margin-right: 480px;
+        padding-top: 16px;
+    }
+
+}
+
+@media screen and (min-width: 660px) and  (max-width: 1050px) {
+    .upper-content {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logo-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .about-div {
+        padding: 0 100px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-div {
+        padding: 0 125px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .about-div {
+        padding: 0 150px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .about-div {
+        padding: 0 175px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .about-div {
+        padding: 0 400px;
+    }
+}
+
+.page-membership, .page-programs, .page-mentors {
+    font-family: 'Arial';
+}
+
+.mentors-p {
+    color: #B6C1CF;
+}
+
+.network-second-p  {
+    color: rgb(160, 174, 192);
+}
+.network-p {
+    color: rgb(160, 174, 192);
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1000px) {
+    .alumni-network > h2 {
+        font-size: 36px;
+        padding-top: 30px;
+    }
+
+
+    .network-second-p {
+        padding-bottom: 90px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .what-is-jsocial {
+        font-size: 20px;
+    }
+
+    .explanation-h {
+        font-size: 55px;
+    }
+
+    .card-h {
+        font-size: 30px;
+    }
+
+    .card-p {
+        font-size: 18px;
+    }
+
+    .jae-lee-first-p {
+        font-size: 40px;
+    }
+    
+    .jae-lee-second-p {
+        font-size: 16px;
+    }
+
+    .james-lee-h {
+        font-size: 55px;
+        line-height: 60px   ;
+    }
+
+    .james-lee-first-p {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .james-lee-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 15px 0 0 0;
+    }
+
+    .james-lee-img {
+        padding-bottom: 0;
+    }
+
+    .middle-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 100px;
+    }
+
+    .icons {
+        height: 80.7px;
+        line-height: 24px;
+    }
+
+    .text-and-zoom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 300px;   
+    }
+
+    .card-p {
+        width: 87%;
+    }
+
+    .zoom-img > img {               
+        height: 400px;
+        width: 2000px;    
+    }
+
+    .membership-blocks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 350px;
+    }
+
+    .membership-first-h2 {
+        font-size: 55px;
+        letter-spacing: -3.4px;
+    }
+}
